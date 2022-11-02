@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "628119374810",
+    "project_id": "namanellai-c281f",
+    "storage_bucket": "namanellai-c281f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628119374810:android:370fd4d97b27c274aecee3",
+        "android_client_info": {
+          "package_name": "com.example.scad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628119374810-hv887di6t9kfc9g57ib2h6ktfo536pku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3heK2W3EDF00f6m3slyeWi87QXbNmY3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628119374810-hv887di6t9kfc9g57ib2h6ktfo536pku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
