@@ -1,19 +1,13 @@
-// @dart=2.9
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:scad/home.dart';
 import 'package:scad/register.dart';
 
-import 'login.dart';
-//yZcQd1PPj9Uo76rAG2cSyE5VPdM2
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-  );
-  runApp(MyApp());
+  await Firebase.initializeApp();
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -38,7 +32,7 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) =>Scaffold(
-    body:StreamBuilder<User>(
+    body:StreamBuilder(
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context,snapshot){
         if(snapshot.connectionState == ConnectionState.waiting){

@@ -170,7 +170,7 @@ class _SignupState extends State<Signup> {
     }on FirebaseAuthException catch (e){
       print(e.message);
       Fluttertoast.showToast(
-          msg: e.message,
+          msg: e.message.toString(),
           backgroundColor: Colors.grey,
       );
       // Utils.showSnackBar(e.message);

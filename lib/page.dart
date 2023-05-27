@@ -441,7 +441,7 @@ class _morepageState extends State<morepage> {
         backgroundColor: Colors.white,
         title:Container(child:
         Column(
-          children:[
+          children:const [
             Text("More", style: TextStyle(
                 fontFamily: 'Railway',
                 fontWeight: FontWeight.bold,
@@ -464,13 +464,13 @@ class _morepageState extends State<morepage> {
             child: Column(
               children: [
                 SizedBox(height:MediaQuery.of(context).size.height*0.05,),
-                Text("Select the type of Services",
+                const Text("Select the type of Services",
                   style: TextStyle(
                       fontFamily: "JosefinSans"
                   ),),
                 SizedBox(height:MediaQuery.of(context).size.height*0.05,),
                 Container(
-                  padding: EdgeInsets.fromLTRB(0.0,20.0, 0.0, 10.0),
+                  padding: const EdgeInsets.fromLTRB(0.0,20.0, 0.0, 10.0),
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child:
@@ -503,6 +503,7 @@ class _morepageState extends State<morepage> {
 
                           ),
                         ),
+
                         SizedBox(width: 12),
                         Card(
                           shape: RoundedRectangleBorder(

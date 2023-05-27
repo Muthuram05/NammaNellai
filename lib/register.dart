@@ -3,7 +3,6 @@ import 'package:scad/signup.dart';
 
 import 'login.dart';
 bool signin = false;
-
 class Register extends StatefulWidget {
   const Register({Key? key}) : super(key: key);
 
@@ -39,7 +38,7 @@ class _RegisterState extends State<Register> {
                 SizedBox(height: MediaQuery.of(context).size.height*0.05,),
                 Row(
                   children: [
-                    FlatButton(onPressed: changeState , child: Container(
+                    ElevatedButton(onPressed: changeState , child: Container(
                       width:MediaQuery.of(context).size.width*0.30,
                       height: MediaQuery.of(context).size.height*0.05,
                       child:InkWell(
@@ -60,15 +59,13 @@ class _RegisterState extends State<Register> {
                           )
                       ),
                     ),),
-                    FlatButton(
-
+                    ElevatedButton(
                       onPressed: changeState , child: Container(
 
                       width:MediaQuery.of(context).size.width*0.30,
                       height: MediaQuery.of(context).size.height*0.05,
                       child:InkWell(
                           onTap: (){
-
                             changeState();
                           },
                           child: Card(
@@ -87,7 +84,7 @@ class _RegisterState extends State<Register> {
                   ],
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height*0.05,),
-                signin == true ?Loginpage(): Signup(),
+                signin == true ?LoginPage(): Signup(),
 
                 
               ],

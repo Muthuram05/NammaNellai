@@ -81,8 +81,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
 
                   height: MediaQuery.of(context).size.height*0.06,
                 ),
-                FlatButton(
-                    color: Color(0xff700B97),
+                ElevatedButton(
                     onPressed: resetPassword, child: Container(
                   width: MediaQuery.of(context).size.width*0.50,
                   height: MediaQuery.of(context).size.height*0.06,
@@ -117,7 +116,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
     }
     on FirebaseException catch (e){
       Fluttertoast.showToast(
-          msg: e.message,
+          msg: e.message.toString(),
           backgroundColor: Colors.grey
       );
     }
